@@ -9,6 +9,8 @@ const appointmentRoutes = require('./routes/appointments');
 const paymentRoutes = require('./routes/payments');
 const reviewRoutes = require('./routes/reviews');
 const chatRoutes = require('./routes/chat');
+const supplyRoutes = require('./routes/supplies');
+const userRoutes = require('./routes/users');
 // ... other routes
 
 dotenv.config();
@@ -28,6 +30,8 @@ app.use('/api/appointments', appointmentRoutes);
 app.use('/api/payments', paymentRoutes);
 app.use('/api/reviews', reviewRoutes);
 app.use('/api/chat', chatRoutes);
+app.use('/api/supplies', supplyRoutes);
+app.use('/api/users', userRoutes);
 
 app.get('/', (req, res) => {
     res.json({ message: 'Medical Booking API running!' });
