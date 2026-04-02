@@ -17,17 +17,17 @@ const seedData = async () => {
 
         // Create users
         const doctorUsers = await Promise.all([
-            User.create({ name: 'BS. Nguyễn Văn Hải', email: 'hai@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=11' }),
-            User.create({ name: 'BS. Trần Thị Lan', email: 'lan@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=5' }),
-            User.create({ name: 'BS. Lê Minh Tuấn', email: 'tuan@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=12' }),
-            User.create({ name: 'BS. Phạm Quang Cường', email: 'cuong@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=13' }),
-            User.create({ name: 'BS. Võ Thị Yến', email: 'yen@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=9' }),
-            User.create({ name: 'BS. Đặng Thái Sơn', email: 'son@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=14' }),
-            User.create({ name: 'BS. Ngô Thanh Hương', email: 'huong@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=10' }),
-            User.create({ name: 'BS. Bùi Xuân Trường', email: 'truong@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=15' }),
-            User.create({ name: 'BS. Nguyễn Bảo Hà', email: 'ha@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=16' }),
-            User.create({ name: 'BS. Trịnh Tấn Phong', email: 'phong@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://i.pravatar.cc/150?img=33' }),
-            
+            User.create({ name: 'BS. Nguyễn Văn Hải', email: 'hai@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+            User.create({ name: 'BS. Trần Thị Lan', email: 'lan@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+            User.create({ name: 'BS. Lê Minh Tuấn', email: 'tuan@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+            User.create({ name: 'BS. Phạm Quang Cường', email: 'cuong@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+            User.create({ name: 'BS. Võ Thị Yến', email: 'yen@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+            User.create({ name: 'BS. Đặng Thái Sơn', email: 'son@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+            User.create({ name: 'BS. Ngô Thanh Hương', email: 'huong@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+            User.create({ name: 'BS. Bùi Xuân Trường', email: 'truong@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+            User.create({ name: 'BS. Nguyễn Bảo Hà', email: 'ha@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+            User.create({ name: 'BS. Trịnh Tấn Phong', email: 'phong@example.com', password: hashedPassword, role: 'doctor', avatar: 'https://blob.khoav4.com/1733804518305-9f81666e83e9a49f1c11fa0961fe220d.jpg' }),
+
             // Patient & Staff
             User.create({ name: 'Patient Test', email: 'patient@test.com', password: hashedPassword, role: 'patient' }),
             User.create({ name: 'Staff Admin', email: 'staff@test.com', password: hashedPassword, role: 'staff' })
