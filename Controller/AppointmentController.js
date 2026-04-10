@@ -57,12 +57,20 @@ exports.updateAppointment = async (req, res) => {
         const { id } = req.params;
         const updates = req.body;
         
-        // Verify doctor
-        const doctor = await Doctor.findOne({ userId: req.user.id });
-        if (!doctor) return res.status(404).json({ msg: 'Doctor profile not found' });
+        let filter = { _id: id };
+
+        if (req.user.role === 'doctor') {
+            const doctor = await Doctor.findOne({ userId: req.user.id });
+            if (!doctor) return res.status(404).json({ msg: 'Doctor profile not found' });
+            filter.doctorId = doctor._id;
+        } else if (req.user.role === 'patient') {
+            filter.patientId = req.user.id;
+        } else {
+            return res.status(403).json({ msg: 'Unauthorized access' });
+        }
 
         const appointment = await Appointment.findOneAndUpdate(
-             { _id: id, doctorId: doctor._id },
+             filter,
              { $set: updates },
              { new: true }
         ).populate('patientId', 'name email');

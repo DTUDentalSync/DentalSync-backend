@@ -8,3 +8,4 @@ error.log
 dropDB.js
 coverage/
 .nyc_output/
+.agents/
